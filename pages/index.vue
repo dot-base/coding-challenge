@@ -8,6 +8,4 @@
   </div>
 </template>
 
-<script setup lang="ts">
-const { data } = await useFetch("/api/user");
-</script>
+<script setup lang="ts"></script>

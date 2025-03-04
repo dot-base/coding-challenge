@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { render, screen } from "@testing-library/vue";
+import { screen } from "@testing-library/vue";
 import { renderSuspended } from "@nuxt/test-utils/runtime";
 import DotMenu from "../DotMenu.vue";
 

@@ -9,9 +9,9 @@
     <Form
       v-slot="$form"
       :resolver="resolver"
-      :initialValues="initialValues"
-      @submit="onFormSubmit"
+      :initial-values="initialValues"
       class="flex flex-col gap-4 w-full"
+      @submit="onFormSubmit"
     >
       <ControlledTextInput
         name="firstName"
@@ -20,7 +20,7 @@
         type="text"
         fluid
         :invalid="$form.firstName?.invalid"
-        :errorMessage="$form.firstName?.error?.message"
+        :error-message="$form.firstName?.error?.message"
       />
       <ControlledTextInput
         name="lastName"
@@ -29,7 +29,7 @@
         type="text"
         fluid
         :invalid="$form.lastName?.invalid"
-        :errorMessage="$form.lastName?.error?.message"
+        :error-message="$form.lastName?.error?.message"
       />
 
       <ControlledTextInput
@@ -39,7 +39,7 @@
         type="text"
         fluid
         :invalid="$form.email?.invalid"
-        :errorMessage="$form.email?.error?.message"
+        :error-message="$form.email?.error?.message"
       />
 
       <Button type="submit" severity="secondary" label="Submit" />
@@ -48,14 +48,12 @@
 </template>
 
 <script setup lang="ts">
-const { data } = await useFetch("/api/user");
-
 import { ref } from "vue";
 import { zodResolver } from "@primevue/forms/resolvers/zod";
-import { useToast } from "primevue/usetoast";
 import { z } from "zod";
 
-const toast = useToast();
+const { data } = await useFetch("/api/user");
+
 const initialValues = ref({
   firstName: data.value?.firstName,
   lastName: data.value?.lastName,
