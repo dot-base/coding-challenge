@@ -1,4 +1,4 @@
-# dot-base Coding Challenge
+# dotbase Coding Challenge
 
 ## Welcome! 👋
 
