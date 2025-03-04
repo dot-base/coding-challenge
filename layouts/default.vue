@@ -1,58 +1,39 @@
 <template>
-  <div>
-    <Menubar :model="items" />
+  <div class="flex min-h-screen bg-slate-100">
+    <DotMenu :user="user" class="h-full" />
 
-    <slot />
+    <div class="flex-1 m-4 p-4 bg-white border border-slate-200 rounded">
+      <DotBreadcrumb :home="home" :items="items" />
+      <div class="px-4">
+        <slot />
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
 
-const items = ref([
-  {
-    label: "Home",
-    icon: "pi pi-home",
-  },
-  {
-    label: "Features",
-    icon: "pi pi-star",
-  },
-  {
-    label: "Projects",
-    icon: "pi pi-search",
-    items: [
-      {
-        label: "Components",
-        icon: "pi pi-bolt",
-      },
-      {
-        label: "Blocks",
-        icon: "pi pi-server",
-      },
-      {
-        label: "UI Kit",
-        icon: "pi pi-pencil",
-      },
-      {
-        label: "Templates",
-        icon: "pi pi-palette",
-        items: [
-          {
-            label: "Apollo",
-            icon: "pi pi-palette",
-          },
-          {
-            label: "Ultima",
-            icon: "pi pi-palette",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    label: "Contact",
-    icon: "pi pi-envelope",
-  },
-]);
+const route = useRoute();
+
+const user = {
+  firstName: "John",
+  lastName: "Doe",
+  role: "Admin",
+};
+
+const home = ref({
+  icon: "pi pi-home",
+  route: "/",
+});
+
+const items = computed(() => {
+  if (route.path === '/settings') {
+    return [{ label: "Settings", route: "/settings" }];
+  }
+  if (route.path === '/') {
+    return [{ label: "Home", route: "/" }];
+  }
+  return [];
+});
 </script>
