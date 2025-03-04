@@ -2,6 +2,7 @@
   <div class="flex flex-col gap-1">
     <label :for="name">{{ label }}</label>
     <InputText
+      :id="name"
       :name="name"
       :type="type"
       :placeholder="placeholder"
