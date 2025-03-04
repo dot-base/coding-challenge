@@ -1,75 +1,78 @@
-# Nuxt Minimal Starter
+# dot-base Coding Challenge
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Welcome! 👋
 
-## Setup
+Thank you for your interest in joining dotbase! This repository contains the coding challenges we use as part of our interview process. Please take a moment to read through this entire README before starting the challenges.
 
-Make sure to install dependencies:
+The challenges are designed to help us understand your coding style, problem-solving approach, and familiarity with modern web development practices.
+
+## Tech Stack
+
+This project uses modern web technologies that we also (kind of) use in our production environment:
+
+- [Vue 3](https://vuejs.org/guide/introduction.html) - Progressive JavaScript Framework
+- [Nuxt 3](https://nuxt.com/docs/getting-started/introduction) - Vue Framework for building full-stack applications
+- [PrimeVue](https://primevue.org/) - UI Component Library
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [PrimeVue Icons](https://primevue.org/icons/#list) - Icon Library
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- Git
+
+## Getting Started
+
+1. Clone the repository:
 
 ```bash
-# npm
+git clone https://github.com/dot-base/coding-challenge.git
+cd coding-challenge
+```
+
+2. Install dependencies:
+
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+3. Start the development server:
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+The application will be available at `http://localhost:3000`
 
-Build the application for production:
+## Coding Exercises
 
-```bash
-# npm
-npm run build
+### Exercise 1: [Exercise Name]
 
-# pnpm
-pnpm build
+**Difficulty**: [Easy/Medium/Hard]
 
-# yarn
-yarn build
+**Description**:
+[Brief description of the exercise and its objectives]
 
-# bun
-bun run build
-```
+**Requirements**:
 
-Locally preview production build:
+- [Requirement 1]
+- [Requirement 2]
+- [Requirement 3]
 
-```bash
-# npm
-npm run preview
+**Evaluation Criteria**:
 
-# pnpm
-pnpm preview
+- [Criterion 1]
+- [Criterion 2]
+- [Criterion 3]
 
-# yarn
-yarn preview
+---
 
-# bun
-bun run preview
-```
+### Exercise 2: [Exercise Name]
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+[Same structure as above...]
+
+## Submission Guidelines
+
+[To be filled with submission instructions]
