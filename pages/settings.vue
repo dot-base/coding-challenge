@@ -71,8 +71,8 @@ const resolver = ref(
         .string()
         .min(1, { message: "Email is required." })
         .email({ message: "Invalid email address." }),
-    })
-  )
+    }),
+  ),
 );
 
 const onFormSubmit = ({ valid }: { valid: boolean }) => {

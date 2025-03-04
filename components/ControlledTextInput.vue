@@ -8,12 +8,9 @@
       :placeholder="placeholder"
       :fluid="fluid"
     />
-    <Message
-      v-if="invalid"
-      severity="error"
-      size="small"
-      variant="simple"
-    >{{ errorMessage }}</Message>
+    <Message v-if="invalid" severity="error" size="small" variant="simple">{{
+      errorMessage
+    }}</Message>
   </div>
 </template>
 
@@ -29,4 +26,4 @@ interface TextInputProps {
 }
 
 defineProps<TextInputProps>();
-</script> 
+</script>

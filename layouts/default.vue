@@ -28,10 +28,10 @@ const home = ref({
 });
 
 const items = computed(() => {
-  if (route.path === '/settings') {
+  if (route.path === "/settings") {
     return [{ label: "Settings", route: "/settings" }];
   }
-  if (route.path === '/') {
+  if (route.path === "/") {
     return [{ label: "Home", route: "/" }];
   }
   return [];
