@@ -48,6 +48,10 @@ The application will be available at `http://localhost:3000`
 
 ## Coding Exercises
 
+Example of Radar Chart
+<img width="498" alt="image" src="https://github.com/user-attachments/assets/c7f17d4a-55f5-4568-8211-c33b249d1fd9" />
+
+
 ### Exercise 1: [Exercise Name]
 
 **Difficulty**: [Easy/Medium/Hard]
